@@ -41,7 +41,9 @@ class TechData {
   public _15 = 'mx';
   public _16 = 'mx';
   public G = 'mx';
+
   public F = 'f1';
+
   public N = 'mx';
   public _17 = 'mx';
   public O_1 = 'mx';
@@ -149,6 +151,91 @@ class TechData {
     'DZ_3',
   ];
 
+  techdataOrderDesc = [
+    {key: 'E', label: 'E', description: 'Identifikační číslo vozidla (VIN)'},
+    {key: 'R', label: 'R', description: 'Barva'},
+    {key: 'ESC', label: 'ES č.', description: ''},
+    {key: 'ZTPC', label: 'ZTP č.', description: ''},
+    {key: '_1', label: '1', description: 'Druh vozidla'},
+    {key: '_2', label: '2', description: ''},
+    {key: 'J', label: 'J', description: 'Kategorie vozidla(zkratka)'},
+    {key: 'D_1', label: 'D.1', description: 'Tovární značka'},
+    {key: 'D_2_1', label: 'D.2a', description: 'Typ'},
+    {key: 'D_2_2', label: 'D.2b', description: 'Varianta'},
+    {key: 'D_2_3', label: 'D.2c', description: 'Verze'},
+    {key: 'D_3', label: 'D.3', description: 'Obchodní označení'},
+    {key: '_3', label: '3', description: 'Výrobce vozidla'},
+    {key: '_4', label: '4', description: 'Výrobce'},
+    {key: '_5', label: '5', description: 'Typ'},
+    {key: 'P_1', label: 'P.1', description: 'zdvih objem[cm]'},
+    {key: 'P_2', label: 'P.2', description: 'Max. výkon [kW]'},
+    {key: 'P_3', label: 'P.3', description: 'Palivo'},
+    {key: 'P_4', label: 'P.4', description: 'ot [min-1]'},
+
+    {key: 'V_9_1', label: 'V.9', description: 'Předpis EHK OSN č'},
+    {key: 'V_9_2', label: 'V.9b', description: 'Směrnice EHS/ES č'},
+    {key: 'V_6', label: 'V.6', description: 'Korigovaný součinitel absorbce [em]'},
+    {key: 'V_7', label: 'V.7', description: 'CO2[g.km]]'},
+    {key: '_6', label: '6', description: 'výrobce'},
+    {key: '_7', label: '7', description: 'druh(typ)'},
+    {key: '_8', label: '8', description: 'výrobní číslo(nástavby, kabiny)'},
+    {key: 'S', label: 'S', description: 'Počet míst - celkem'},
+    {key: 'S_1', label: 'S.1', description: '- k sezení'},
+    {key: 'S_2', label: 'S.2', description: '- k stání'},
+    {key: '_9', label: '9', description: '- lůžek'},
+    {key: '_10', label: '10', description: 'Maximální zatížení střechy'},
+    {key: '_11', label: '11', description: 'Objem cisterny'},
+
+    {key: '_12', label: '12', description: 'Celková [mm] - délka'},
+    {key: '_13', label: '13', description: '- šířka'},
+    {key: '_14', label: '14', description: '- výška'},
+
+    {key: 'M', label: 'M', description: 'Rozvor[mm]'},
+
+    {key: '_15', label: '15', description: 'Rozměry ložné plochy[mm]-délka'},
+    {key: '_16', label: '16', description: '- šířka'},
+
+    {key: 'G', label: 'G', description: 'Provozní hmotnost[kg]'},
+
+    {key: 'F', label: 'F.1/F.2', description: ''},
+
+    {key: 'N', label: 'N1; N2; N3; N4', description: 'Největší technicky přístupná/povolená hmotnost na nápravu [kg]'},
+
+    {key: '_17', label: '17', description: 'Největší svisle statické zatížení spojovacího zařízení(závěs/točnice))[kg]'},
+
+    {key: 'O_1', label: 'O.1', description: 'Největší technicky přípustná / povolená hmotnost přípojného vozidla [kg] - brzděného'},
+    {key: 'O_2', label: 'O.2', description: 'Největší technicky přípustná / povolená hmotnost přípojného vozidla [kg] - nebrzděného'},
+
+    {key: '_18', label: '18/F.3', description: ''},
+
+    {key: '_19', label: '19', description: ''},
+    {key: 'L', label: 'L', description: ''},
+    {key: '_20', label: '20', description: ''},
+    {key: '_21', label: '21', description: ''},
+    {key: '_22', label: '22', description: ''},
+    {key: '_23', label: '23', description: ''},
+    {key: 'T', label: 'T', description: ''},
+    {key: '_24_1', label: '24a', description: ''},
+    {key: '_24_2', label: '24b', description: ''},
+    {key: '_24_3', label: '24c', description: ''},
+    {key: '_24_4', label: '24d', description: ''},
+    {key: 'U1_U2', label: 'U1/U2', description: ''},
+    {key: 'U3', label: 'U3', description: ''},
+    {key: '_25', label: '25', description: ''},
+    {key: '_26', label: '26', description: ''},
+    {key: '_27', label: '27', description: ''},
+    {key: 'Q', label: 'Q', description: ''},
+    {key: '_28', label: '28', description: ''},
+    {key: '_29', label: '29', description: ''},
+    {key: '_30', label: '30', description: ''},
+    {key: 'vozidlocj', label: 'Vozidlo č.j.', description: ''},
+    {key: 'vozidlodate', label: 'Vozidlo datum vystavení', description: ''},
+    {key: 'nastavbacj', label: 'Nadstavba č.j.', description: ''},
+    {key: 'nastavbadate', label: 'Nadstavba datum doplnění', description: ''},
+    {key: 'DZ_1', label: 'DZ.1', description: ''},
+    {key: 'DZ_2', label: 'DZ.2', description: ''},
+    {key: 'DZ_3', label: 'DZ.3', description: ''},
+  ];
 
 }
 
@@ -204,6 +291,7 @@ export class AppComponent {
 
     }
   }
+
 
   getPrintOffset() {
     return this.printOffset + 'mm';

@@ -19,7 +19,7 @@ button {
 }
 
 .side-bar {
-  font-family: Roboto,sans-serif;
+  font-family: Roboto, sans-serif;
   background-color: lightgray;
   position: fixed;
   right: 0;
@@ -42,10 +42,11 @@ align-items: center;
 
 label {
   display: inline-block;
-  min-width: 80px;
+  min-width: 90px;
   font-size: 14px;
   text-align: right;
   margin-right: 10px;
+  line-height: 30px;
 }
 
 input {
@@ -54,7 +55,19 @@ input {
   border: 1px solid #ccc;
   line-height: 16px;
   min-height: 24px;
+  //width: 100%;
   flex: 1;
+}
+
+.form-input {
+  flex: 1;
+
+}
+
+.form-input-help {
+  margin-top: 2px;
+  font-size: 11px;
+  color: #4a4a50;
 }
 
 
@@ -75,7 +88,7 @@ hr {
 @media print {
 
   .no-print {
-    display:none !important;
+    display: none !important;
   }
 
   body {
@@ -91,6 +104,7 @@ hr {
     background-image: none;
 
     width: 210mm;
+
     svg {
       width: 210mm;
     }
