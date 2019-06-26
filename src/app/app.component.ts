@@ -168,9 +168,8 @@ class TechData {
     {key: '_4', label: '4', description: 'Výrobce'},
     {key: '_5', label: '5', description: 'Typ'},
     {key: 'P_1', label: 'P.1', description: 'zdvih objem[cm]'},
-    {key: 'P_2', label: 'P.2', description: 'Max. výkon [kW]'},
+    {key: 'P_2', label: 'P.2/P.4', description: 'Max. výkon [kW]'},
     {key: 'P_3', label: 'P.3', description: 'Palivo'},
-    {key: 'P_4', label: 'P.4', description: 'ot [min-1]'},
 
     {key: 'V_9_1', label: 'V.9', description: 'Předpis EHK OSN č'},
     {key: 'V_9_2', label: 'V.9b', description: 'Směrnice EHS/ES č'},
