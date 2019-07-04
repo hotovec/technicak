@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  box-sizing: border-box;
 }
 
 button {
@@ -37,7 +38,7 @@ button {
 .record {
   margin-bottom: 5px;
   display: flex;
-align-items: center;
+  align-items: center;
 }
 
 label {
@@ -86,30 +87,86 @@ hr {
 }
 
 .print-area {
-  width: 210mm;
-  overflow-x: hidden;
-  overflow-y: visible;
-  border: 1px solid black;
+  padding: 0;
+  border-bottom: 1px solid black;
+  font-size: 8pt;
+
+  .first-box {
+    height: 198mm;
+    //border-top: 1px solid black;
+    //border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+  }
+
+  .second-box {
+    height: 68mm;
+    border-bottom: 1px solid black;
+    position: relative;
+
+    .sb2-f1,
+    .sb2-f2,
+    .sb2-f3,
+    .sb2-f4 {
+      height: 4mm;
+      position: absolute;
+      top: 0;
+    }
+
+
+    .sb2-f1 { top: 26mm;}
+    .sb2-f2 { top: 34mm;}
+    .sb2-f3 { top: 47mm;}
+    .sb2-f4 { top: 56mm;}
+
+  }
+  .third-box {
+    height: 12.8mm;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top-offset {
+    height: 10mm;
+  }
+
+  .print-line {
+    //height: 4.5mm;
+    //border-top: 1px solid black;
+    flex: 1;
+  }
+
+
 }
 
 @media print {
+  html, body {
+    display: block;
+    font-family: "Arial";
+    margin: 0;
+    max-width: 210mm;
+    max-height: 297mm;
+  }
+
+  @page {
+    size: 210mm 297mm;
+    margin: 0;
+  }
 
   .no-print {
     display: none !important;
   }
 
   .print-area {
-    width: 210mm;
-    overflow-x: hidden;
-    overflow-y: visible;
+
+    width: 160mm;
+    margin-left: 8mm;
+    //overflow-x: hidden;
+    //overflow-y: visible;
     //border: 1px solid black;
   }
-  body {
-    margin: 0;
-    padding: 0;
-    width: 210mm;
-    overflow: hidden;
-  }
+
 
   .svg-template {
 

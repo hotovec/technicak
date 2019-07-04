@@ -252,6 +252,10 @@ export class AppComponent {
   printOffset = -3;
   printOffsetX = 3;
 
+  printlines: number[] = new Array(47); //47
+  printlinesdz: number[] = new Array(3); //47
+
+
   data: TechData = new TechData();
 
 
