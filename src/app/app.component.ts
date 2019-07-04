@@ -27,11 +27,11 @@ class TechData {
   public _6 = 'mx';
   public _7 = 'mx';
   public _8 = 'mx';
+  public _9 = 'mx';
   public R = 'mx';
   public S = 'mx';
   public S_1 = 'mx';
   public S_2 = 'mx';
-  public S_3 = 'mx';
   public _10 = 'mx';
   public _11 = 'mx';
   public _12 = 'mx';
@@ -103,10 +103,10 @@ class TechData {
     '_6',
     '_7',
     '_8',
+    '_9',
     'S',
     'S_1',
     'S_2',
-    'S_3',
     '_10',
     '_11',
     '_12',

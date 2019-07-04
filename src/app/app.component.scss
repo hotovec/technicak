@@ -88,21 +88,18 @@ hr {
 
 .print-area {
   padding: 0;
-  border-bottom: 1px solid black;
   font-size: 8pt;
 
   .first-box {
     height: 198mm;
-    //border-top: 1px solid black;
-    //border-bottom: 1px solid black;
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid black;
+    //border-bottom: 1px solid black;
   }
 
   .second-box {
     height: 68mm;
-    border-bottom: 1px solid black;
+    //border-bottom: 1px solid black;
     position: relative;
 
     .sb2-f1,
@@ -115,12 +112,24 @@ hr {
     }
 
 
-    .sb2-f1 { top: 26mm;}
-    .sb2-f2 { top: 34mm;}
-    .sb2-f3 { top: 47mm;}
-    .sb2-f4 { top: 56mm;}
+    .sb2-f1 {
+      top: 26mm;
+    }
+
+    .sb2-f2 {
+      top: 34mm;
+    }
+
+    .sb2-f3 {
+      top: 47mm;
+    }
+
+    .sb2-f4 {
+      top: 56mm;
+    }
 
   }
+
   .third-box {
     height: 12.8mm;
     display: flex;
@@ -128,13 +137,24 @@ hr {
   }
 
   .top-offset {
-    height: 10mm;
+    height: 11mm;
   }
 
   .print-line {
-    //height: 4.5mm;
-    //border-top: 1px solid black;
     flex: 1;
+    display: block;
+    position: relative;
+  }
+
+  $step: 5;
+
+  @for $i from 1 through 30 {
+    $val: $i * $step;
+    .s#{$val} {
+      position: absolute;
+      top: 0;
+      left: #{$val}mm;
+    }
   }
 
 

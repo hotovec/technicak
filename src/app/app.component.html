@@ -1,18 +1,70 @@
 <div class="print-area">
-  <div class="top-offset">to</div>
+  <div class="top-offset"></div>
   <div class="first-box">
-    <div class="print-line" *ngFor="let c of printlines;let i = index"> --- {{i + 1}}</div>
+
+    <div class="print-line"><div class="s20">{{data.ZTPC}}</div><div class="s80">{{data.ESC}}</div></div>
+    <div class="print-line"><div class="s30">{{data._1}}</div></div>
+    <div class="print-line"><div class="s15">{{data._2}}</div></div>
+    <div class="print-line"><div class="s35">{{data.J}}</div></div>
+    <div class="print-line"><div class="s35">{{data.D_1}}</div></div>
+    <div class="print-line"><div class="s20">{{data.D_2_1}}</div><div class="s65">{{data.D_2_2}}</div><div class="s105">{{data.D_2_3}}</div></div>
+    <div class="print-line"><div class="s35">{{data.D_3}}</div></div>
+    <div class="print-line"><div class="s45">{{data.E}}</div></div>
+    <div class="print-line"><div class="s35">{{data._3}}</div></div>
+    <div class="print-line"><div class="s25">{{data._4}}</div></div>
+    <div class="print-line"><div class="s15">{{data._5}}</div><div class="s110">{{data.P_3}}</div></div>
+    <div class="print-line"><div class="s40">{{data.P_2}}</div><div class="s110">{{data.P_1}}</div></div>
+    <div class="print-line"><div class="s35">{{data.V_9_1}}</div><div class="s85">{{data.V_9_2}}</div></div>
+    <div class="print-line"><div class="s50">{{data.V_6}}</div><div class="s110">{{data.V_7}}</div></div>
+    <div class="print-line"><div class="s25">{{data._6}}</div></div>
+    <div class="print-line"><div class="s25">{{data._7}}</div></div>
+    <div class="print-line"><div class="s45">{{data._8}}</div></div>
+    <div class="print-line"><div class="s25">{{data.R}}</div></div>
+    <div class="print-line"><div class="s35">{{data.S}}</div><div class="s65">{{data.S_1}}</div><div class="s95">{{data.S_2}}</div><div class="s120">{{data._9}}</div></div>
+    <div class="print-line"><div class="s45">{{data._10}}</div><div class="s85">{{data._11}}</div></div>
+    <div class="print-line"><div class="s35">{{data._12}}</div><div class="s80">{{data._13}}</div><div class="s115">{{data._14}}</div></div>
+    <div class="print-line"><div class="s30">{{data.M}}</div></div>
+    <div class="print-line"><div class="s50">{{data._15}}</div><div class="s90">{{data._16}}</div></div>
+    <div class="print-line"><div class="s40">{{data.G}}</div></div>
+    <div class="print-line"><div class="s70">{{data.F}}</div></div>
+    <div class="print-line"></div>
+    <div class="print-line"><div class="s15">{{data.N}}</div></div>
+    <div class="print-line"><div class="s85">{{data._17}}</div></div>
+    <div class="print-line"><div class="s100">{{data.O_1}}</div></div>
+    <div class="print-line"><div class="s100">{{data.O_2}}</div></div>
+    <div class="print-line"><div class="s85">{{data._18}}</div></div>
+    <div class="print-line"><div class="s45">{{data._19}}</div></div>
+    <div class="print-line"></div>
+    <div class="print-line"><div class="s50">{{data.L}}</div></div>
+    <div class="print-line"></div>
+    <div class="print-line"><div class="s15">{{data._20}}</div></div>
+    <div class="print-line"><div class="s15">{{data._21}}</div></div>
+    <div class="print-line"><div class="s15">{{data._22}}</div></div>
+    <div class="print-line"><div class="s15">{{data._23}}</div></div>
+    <div class="print-line"><div class="s40">{{data.T}}</div></div>
+    <div class="print-line"><div class="s40">{{data._24_1}}</div><div class="s60">{{data._24_2}}</div><div class="s90">{{data._24_3}}</div><div class="s115">{{data._24_4}}</div></div>
+    <div class="print-line"><div class="s70">{{data.U1_U2}}</div><div class="s115">{{data.U3}}</div></div>
+    <div class="print-line"><div class="s40">{{data._25}}</div><div class="s110">{{data._26}}</div></div>
+    <div class="print-line"><div class="s25">{{data._27}}</div></div>
+    <div class="print-line"><div class="s45">{{data.Q}}</div><div class="s95">{{data._28}}</div></div>
+    <div class="print-line"><div class="s45">{{data._29}}</div><div class="s110">{{data._30}}</div></div>
+    <div class="print-line"></div>
+
+
+<!--    <div class="print-line" *ngFor="let c of printlines;let i = index"> -&#45;&#45; {{i + 1}}</div>-->
   </div>
 
   <div class="second-box">
-    <div class="sb2-f1">---D</div>
-    <div class="sb2-f2">---D</div>
-    <div class="sb2-f3">---D</div>
-    <div class="sb2-f4">---D</div>
+    <div class="sb2-f1 s40">{{data.vozidlocj}}</div>
+    <div class="sb2-f2 s60">{{data.vozidlodate}}</div>
+    <div class="sb2-f3 s40">{{data.nastavbacj}}</div>
+    <div class="sb2-f4 s60">{{data.nastavbadate}}</div>
   </div>
 
   <div class="third-box">
-    <div class="print-line" *ngFor="let c of printlinesdz;let i = index"> --- {{i + 1}}</div>
+    <div class="print-line"><div class="s15">{{data.DZ_1}}</div></div>
+    <div class="print-line"><div class="s15">{{data.DZ_2}}</div></div>
+    <div class="print-line"><div class="s15">{{data.DZ_3}}</div></div>
   </div>
 
 </div>
