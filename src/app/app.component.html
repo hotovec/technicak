@@ -1,11 +1,11 @@
 <div class="print-area">
-  <div class="svg-template" [style.marginTop.mm]="printOffset">
+  <div class="svg-template" [style.top.mm]="printOffset" [style.left.mm]="printOffsetX" [style.right.mm]="-printOffsetX" width="210mm" height="446.386mm">
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="210mm"
          height="446.386mm" viewBox="0 0 595.276 1265.345">
       <defs>
         <style>
           #BContent {
-            text-transform: uppercase;
+
           }
 
           .cls-1 {
@@ -17,10 +17,10 @@
           }
 
           .cls-3 {
-            font-size: 8px;
+            font-size: 9px;
             fill: #1d1d1b;
             font-family:Roboto, sans-serif;
-            font-weight: 700;
+            font-weight: 500;
           }
 
 
@@ -158,23 +158,26 @@
         <text id="_28" data-name="28" class="cls-3" transform="translate(287.571 568.855)">{{data._28}}</text>
         <text id="_29" data-name="29" class="cls-3" transform="translate(146.241 581.066)">{{data._29}}</text>
         <text id="_30" data-name="30" class="cls-3" transform="translate(294.506 581.066)">{{data._30}}</text>
-        <text id="vozidlo-cj" class="cls-3" transform="translate(92.778 673.846)">{{data.vozidlocj}}</text>
-        <text id="vozidlo-dat" class="cls-3" transform="translate(140.488 698.168)">{{data.vozidlodate}}</text>
-        <text id="nastavba-cj" class="cls-3" transform="translate(91.718 735.295)">{{data.nastavbacj}}</text>
-        <text id="nastavba-dat" class="cls-3" transform="translate(140.488 759.93)">{{data.nastavbadate}}</text>
+        <text id="vozidlo-cj" class="cls-3" transform="translate(140 673.846)">{{data.vozidlocj}}</text>
+        <text id="vozidlo-dat" class="cls-3" transform="translate(160 698.168)">{{data.vozidlodate}}</text>
+        <text id="nastavba-cj" class="cls-3" transform="translate(140.718 735.295)">{{data.nastavbacj}}</text>
+        <text id="nastavba-dat" class="cls-3" transform="translate(160 759.93)">{{data.nastavbadate}}</text>
         <text id="DZ_1" class="cls-3" transform="translate(34.03 796.744)">{{data.DZ_1}}</text>
         <text id="DZ_2" class="cls-3" transform="translate(34.03 807.944)">{{data.DZ_2}}</text>
         <text id="DZ_3" class="cls-3" transform="translate(34.03 819.914)">{{data.DZ_3}}</text>
       </g>
     </svg>
   </div>
+
+
+
 </div>
 
 <div class="pane no-print">
   <div class="side-bar">
     <div class="side-bar-content">
 
-      <h2>Technicak</h2>
+      <h2>Technicak r2.12</h2>
       <div>
         <button (click)="loadDataset(50)">50ccm</button>
         <button (click)="loadDataset(125)">125ccm</button>
@@ -187,7 +190,10 @@
         <label for="trackdata">Tiskonout trackovací značky</label>
         </div>
         <div style="flex:1">
-          <label>Ofset od horního kraje</label>
+          <label>Ofset X</label>
+          <input type="number" [(ngModel)]="printOffsetX" step="0.1" style="width: 40px; text-align: right"> mm
+
+          <label>Ofset Y</label>
           <input type="number" [(ngModel)]="printOffset" step="0.1" style="width: 40px; text-align: right"> mm
         </div>
       </div>

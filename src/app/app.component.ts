@@ -249,7 +249,8 @@ export class AppComponent {
   title = 'technicak';
 
   printTrackingData = false;
-  printOffset = 2;
+  printOffset = -3;
+  printOffsetX = 3;
 
   data: TechData = new TechData();
 
