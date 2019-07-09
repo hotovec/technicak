@@ -88,12 +88,17 @@ hr {
 
 .print-area {
   padding: 0;
-  font-size: 8pt;
+  font-size: 9pt;
   font-family: sans-serif;
+  //font-weight: bold;
   background-image: url("~src/assets/technicak-template-px.jpg");
   background-repeat: no-repeat;
   background-size: 206mm auto;
   background-position: -5mm 0;
+
+  .trackdata {
+    position: absolute;
+  }
 
   .first-box {
     height: 198mm;
