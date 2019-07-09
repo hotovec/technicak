@@ -51,7 +51,6 @@
     <div class="print-line"></div>
 
 
-<!--    <div class="print-line" *ngFor="let c of printlines;let i = index"> -&#45;&#45; {{i + 1}}</div>-->
   </div>
 
   <div class="second-box">
@@ -73,7 +72,7 @@
   <div class="side-bar">
     <div class="side-bar-content">
 
-      <h2>Technicak r2.14</h2>
+      <h2>Technicak r2.15</h2>
       <div>
         <button (click)="loadDataset(50)">50ccm</button>
         <button (click)="loadDataset(125)">125ccm</button>
@@ -85,13 +84,13 @@
           <input id="trackdata" type="checkbox" [(ngModel)]="printTrackingData" [ngModelOptions]="{standalone: true}"/>
           <label for="trackdata">Tiskonout trackovací značky</label>
         </div>
-        <div style="flex:1">
-          <label>Ofset X</label>
-          <input type="number" [(ngModel)]="printOffsetX" step="0.1" style="width: 40px; text-align: right"> mm
+<!--        <div style="flex:1">-->
+<!--          <label>Ofset X</label>-->
+<!--          <input type="number" [(ngModel)]="printOffsetX" step="0.1" style="width: 40px; text-align: right"> mm-->
 
-          <label>Ofset Y</label>
-          <input type="number" [(ngModel)]="printOffset" step="0.1" style="width: 40px; text-align: right"> mm
-        </div>
+<!--          <label>Ofset Y</label>-->
+<!--          <input type="number" [(ngModel)]="printOffsetY" step="0.1" style="width: 40px; text-align: right"> mm-->
+<!--        </div>-->
       </div>
 
       <hr>

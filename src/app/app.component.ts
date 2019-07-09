@@ -249,8 +249,11 @@ export class AppComponent {
   title = 'technicak';
 
   printTrackingData = false;
-  printOffset = -3;
-  printOffsetX = 3;
+
+
+
+  printOffsetY = 0;
+  printOffsetX = 0;
 
   printlines: number[] = new Array(47); //47
   printlinesdz: number[] = new Array(3); //47
@@ -298,7 +301,7 @@ export class AppComponent {
 
 
   getPrintOffset() {
-    return this.printOffset + 'mm';
+    return this.printOffsetY + 'mm';
   }
 
   trackByFn(index, item) {
